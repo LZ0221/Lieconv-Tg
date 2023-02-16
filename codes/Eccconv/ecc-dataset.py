@@ -22,11 +22,11 @@ ATOM_TYPES = [1, 6, 7, 8, 9, 10, 14, 15, 16, 17, 35]
 BOND_TYPES = [1, 2, 3, 4]
 
 
-class My_Test_DataSet(Dataset):
+class Ecc_DataSet(Dataset):
     """
     In this dataset, nodes represent atoms and edges represent chemical bonds.
-    There are 5 possible atom types (H, C, N, O, F) and 4 bond types (single,
-    double, triple, aromatic).
+    There are 11 possible atom types (H, C, N, O, F, P, S, Si, Cl, Br, *) and 
+    4 bond types (single,double, triple, aromatic).
     Node features represent the chemical properties of each atom and include:
     - The atomic number, one-hot encoded;
     - The atom's position in the X, Y, and Z dimensions;
@@ -34,25 +34,16 @@ class My_Test_DataSet(Dataset):
     - The mass difference from the monoisotope;
     The edge features represent the type of chemical bond between two atoms,
     one-hot encoded.
-    Each graph has an 19-dimensional label for regression.
-    **Arguments**
-    - `amount`: int, load this many molecules instead of the full dataset
-    (useful for debugging).
-    - `n_jobs`: number of CPU cores to use for reading the data (-1, to use all
-    available cores).
     """
-
 
     def __init__(self, amount=None, n_jobs=1, **kwargs):
         self.amount = amount
         self.n_jobs = n_jobs
         super().__init__(**kwargs)
 
-    
-
     def read(self):
-        print("Loading My_Test_DataSet dataset.")
-        data = load_sdf('2022_11_22_data_delete_5866.sdf', amount=None)  # Internal SDF format
+        print("Loading Ecc_DataSet .")
+        data = load_sdf('data.sdf', amount=None)  # Internal SDF format
         
         def read_mol(mol):
             x = np.array([atom_to_feature(atom) for atom in mol["atoms"]])
@@ -65,9 +56,7 @@ class My_Test_DataSet(Dataset):
         x_list, a_list, e_list = list(zip(*data))
 
         # Load labels
-        #labels_file = osp.join(self.path, "gdb9.sdf.csv")
-        #labels = load_csv('test_data_with_Mw -1 - 副本.csv',sep=',',encoding='gbk')
-        labels = load_csv('2022_12_5_delete_without_smile.csv',sep=',',encoding='gbk')
+        labels = load_csv('data.csv',sep=',',encoding='gbk')
         labels = labels.set_index("PID").values
         if self.amount is not None:
             labels = labels[: self.amount]
@@ -76,9 +65,9 @@ class My_Test_DataSet(Dataset):
             Graph(x=x, a=a, e=e, y=y)
             for x, a, e, y in zip(x_list, a_list, e_list, labels)
         ]
-
-
+    
 def atom_to_feature(atom):
+   
     atomic_num = label_to_one_hot(atom["atomic_num"], ATOM_TYPES)
     coords = atom["coords"]
     charge = atom["charge"]
