@@ -24,3 +24,11 @@ Eccconv
 * [RDKit](https://rdkit.org/)
 * [TensorFlow](https://www.tensorflow.org/?hl=zh-cn)
 * [Spektral](https://graphneural.network/)
+
+By using the requirements/conda/environment.yml, requirements/pip/requirements.txt file, it will install all the required packages.
+```
+git clone https://github.com/zmzhang/SigmaCCS.git
+cd SigmaCCS
+conda env create -f requirements/conda/environment.yml
+conda activate sigma
+```
