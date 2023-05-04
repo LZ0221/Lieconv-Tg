@@ -4,3 +4,9 @@ This is the code repo for the paper Large-scale Glass Transition Temperature Pre
 Package required:
 ===
 We recommend to use [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) and [pip](https://pypi.org/project/pip/).
+
+Lieconv
+--
+* [Python3](https://www.python.org/)
+* [RDKit](https://rdkit.org/)
+* [PyTorch](https://pytorch.org/get-started/locally/)
