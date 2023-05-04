@@ -15,12 +15,12 @@ Image-CNN
 --
 * [Python3](https://www.python.org/)
 * [RDKit](https://rdkit.org/)
-* [TensorFlow]([https://pytorch.org/get-started/locally/](https://www.tensorflow.org/?hl=zh-cn))
+* [TensorFlow](https://www.tensorflow.org/?hl=zh-cn)
 * [DeepChem](https://deepchem.readthedocs.io/en/latest/)
 
 Eccconv
 --
 * [Python3](https://www.python.org/)
 * [RDKit](https://rdkit.org/)
-* [TensorFlow]([https://pytorch.org/get-started/locally/](https://www.tensorflow.org/?hl=zh-cn))
-* [Spektral]([https://deepchem.readthedocs.io/en/latest/](https://graphneural.network/))
+* [TensorFlow](https://www.tensorflow.org/?hl=zh-cn)
+* [Spektral](https://graphneural.network/)
