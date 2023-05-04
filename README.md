@@ -27,7 +27,7 @@ Eccconv
 
 By using the [requirements/conda/lieconv-environment.yml](https://github.com/LZ0221/Lieconv-Tg/blob/main/requirements/conda/lieconv-environment.yml), requirements/pip/requirements.txt file, it will install all the required packages(Take Lieconv as an example).
 ```
-git clone https://github.com/zmzhang/SigmaCCS.git
+git clone https://github.com/LZ0221/Lieconv-Tg.git
 cd Lieconv-Tg
 conda env create -f requirements/conda/lieconv-environment.yml
 conda activate lieconv
