@@ -33,6 +33,6 @@ conda env create -f requirements/conda/lieconv-environment.yml
 conda activate lieconv
 ```
 
-Dataset generation
+Dataset generation and Feature representation
 ==
-
+We show in code the process of generating and feature representation of the datasets for the three models.
