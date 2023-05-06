@@ -32,3 +32,5 @@ cd Lieconv-Tg
 conda env create -f requirements/conda/lieconv-environment.yml
 conda activate lieconv
 ```
+
+Dataset generation
