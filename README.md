@@ -39,4 +39,4 @@ We show in code the process of generating and feature representation of the data
 
 Image-CNN
 --
-We have provided the [code] (https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Image-CNN/Image-CNN%20Dataset%20generation%20and%20Feature%20representation.ipynb) for the generation of the dataset and performed it in the corresponding example.
+We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Image-CNN/Image-CNN%20Dataset%20generation%20and%20Feature%20representation.ipynb) for the generation of the dataset and performed it in the corresponding example.
