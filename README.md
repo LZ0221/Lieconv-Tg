@@ -55,4 +55,4 @@ The code for training and predict the models are placed in the [Model training a
 
 Models 
 ==
-All optimal model results are placed in the [models directory]([https://github.com/LZ0221/Lieconv-Tg/tree/main/model](https://github.com/LZ0221/Lieconv-Tg/tree/main/models)).
+All optimal model results are placed in the [models directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/models).
