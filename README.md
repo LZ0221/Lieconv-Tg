@@ -36,3 +36,7 @@ conda activate lieconv
 Dataset generation and Feature representation
 ==
 We show in code the process of generating and feature representation of the datasets for the three models.
+
+Image-CNN
+--
+We have provided the code () for the generation of the dataset and performed it in the corresponding example.
