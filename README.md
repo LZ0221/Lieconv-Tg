@@ -64,3 +64,8 @@ The optimisation code for all three models using Weights & Biases is located in 
 Polymer screening
 ==
 The results of the PI1M screening are in the [polymer screening directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/polymer%20screening).(Including PI1M_MF_1, PI1M_MF_2 and PI1M_MF_3)SVG files for the repeating cells in the [Tg>400℃](https://github.com/LZ0221/Lieconv-Tg/tree/main/polymer%20screening/PI1M_MF_3_Tg_greater%20than_400) and [Tg<-110℃](https://github.com/LZ0221/Lieconv-Tg/tree/main/polymer%20screening/PI1M_MF_3_Tg_less%20than_-110) sections of PI1M_MF_3 are also provided in the corresponding folders.
+
+Information of maintainers
+==
+zmzhang@csu.edu.cn
+212311017@csu.edu.cn
