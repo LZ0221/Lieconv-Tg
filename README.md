@@ -47,4 +47,4 @@ We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Datas
 
 Lieconv
 --
-We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Lieconv/Lieconvdataset.py) for the generation of the dataset and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Lieconv/Lieconv%20Dataset%20generation%20and%20Feature%20representation.ipynb).
+We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Lieconv/Lieconvdataset.py) for the generation of the dataset (For the generation of Lieconv's dataset, it is necessary to additionally generate xyz files from the sdf files and generate the required npz files.) and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Lieconv/Lieconv%20Dataset%20generation%20and%20Feature%20representation.ipynb).
