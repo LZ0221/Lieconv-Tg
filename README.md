@@ -67,6 +67,5 @@ The results of the PI1M screening are in the [polymer screening directory](https
 
 Information of maintainers
 ==
-zmzhang@csu.edu.cn
-
-212311017@csu.edu.cn
+*zmzhang@csu.edu.cn
+*212311017@csu.edu.cn
