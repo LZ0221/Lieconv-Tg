@@ -13,7 +13,6 @@ from oil.utils.utils import LoaderTo, islice, cosLr, FixedNumpySeed
 from oil.tuning.args import argupdated_config
 from oil.tuning.study import train_trial
 from oil.utils.parallel import try_multigpu_parallelize
-#from lie_conv.datasets import QM9datasets
 from corm_data.collate import collate_fn
 from lie_conv.moleculeTrainer import MolecLieResNet, MoleculeTrainer
 from oil.datasetup.datasets import split_dataset
@@ -29,8 +28,6 @@ import numpy as np
 import wandb
 import random
 import pandas as pd 
-import numpy as np
-
 import os
 from datetime import datetime
 import sys
@@ -44,9 +41,6 @@ lr=1e-2
 bs=4
 num_epochs=100
 network=MolecLieResNet
-# 'liftsamples':4,              
-# net_config={'k':512,'nbhd':200,'act':'swish','group':lieGroups.SE3(.2),'fill':1/2,'liftsamples':4,
-#                 'bn':True,'aug':True,'mean':True,'num_layers':6}
 recenter=False                
 subsample=False 
 trainer_config={'log_dir':None,'log_suffix':''}
@@ -58,11 +52,9 @@ dataloaders = {key:LoaderTo(DataLoader(dataset,batch_size=bs,num_workers=0,
                 device) for key,dataset in datasets.items()}
 ds_stats = datasets['train'].stats[task]
 
-#load_models
-# model = network(num_species,charge_scale,**net_config).to(device)  
 
 sweep_configuration = {
-    'method': 'grid',
+    'method': 'bayes',
     'name': 'sweep',
     'metric': {'goal': 'minimize', 'name': 'valid_loss'},
     'parameters':
@@ -76,7 +68,7 @@ sweep_configuration = {
 }  
 
 
-sweep_id = wandb.sweep(sweep=sweep_configuration, project='lieconv_40')
+sweep_id = wandb.sweep(sweep=sweep_configuration, project='Lieconv')
 def main():
     wandb.init(resume=resume)
     net_config = {'k':wandb.config.k,'nbhd':wandb.config.nbhd,'act':'swish','group':lieGroups.SE3(.2),'fill':1/2,'liftsamples':4,
@@ -115,10 +107,5 @@ def main():
         wandb.log({"train_loss": train_loss,
                    "valid_loss": valid_loss}
                   )
-        
-    
-    
-    
-       
 # Start sweep job.
 wandb.agent(sweep_id, function=main, count=40)
