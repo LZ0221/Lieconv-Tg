@@ -56,3 +56,7 @@ The code for training and predict the models are placed in the [Model training a
 Models 
 ==
 All optimal model results are placed in the [models directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/models).
+
+Wandb
+==
+The optimisation code for all three models using Weights & Biases is located in the [wandb directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/models).
