@@ -122,13 +122,13 @@ mcp_save = ModelCheckpoint('Saved_model', save_best_only=True, monitor='val_loss
 adam = Adam(lr=0.001)
 
 model = Sequential()
-model.add(Conv2D(18, (8, 8), activation='relu',
+model.add(Conv2D(16, (8, 8), activation='relu',
                  input_shape=(img_width, img_height, 1)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Conv2D(8, (2, 2), activation='relu'))
+model.add(Conv2D(6, (4, 4), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Flatten())
-model.add(Dense(512, activation='relu'))
+model.add(Dense(1536, activation='relu'))
 model.add(Dropout(0.3))
 model.add(Dense(512, activation='relu'))
 model.add(Dropout(0.3))
@@ -139,3 +139,6 @@ history = model.fit(X_train, train_Y,  validation_data=(X_valid, Valid_Y),
           epochs=100, 
           batch_size = 4 ,
           callbacks=[reduce_lr_loss,mcp_save])
+
+#Predict
+
