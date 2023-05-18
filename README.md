@@ -35,8 +35,16 @@ conda activate lieconv
 
 Dataset generation and Feature representation
 ==
-We show in code the process of generating and feature representation of the datasets for the three models.
+We show in [code](https://github.com/LZ0221/Lieconv-Tg/tree/main/Dataset%20generation%20and%20Feature%20representation) the process of generating and feature representation of the datasets for the three models.
 
 Image-CNN
 --
 We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Image-CNN/Image-CNN%20Dataset%20generation%20and%20Feature%20representation.ipynb) for the generation of the dataset and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Image-CNN/Image-CNN%20Dataset%20generation%20and%20Feature%20representation.ipynb).
+
+ECC
+--
+We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Eccconv/Eccconv-dataset.py) for the generation of the dataset and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Eccconv/ECC%20Dataset%20generation%20and%20Feature%20representation.ipynb).
+
+Lieconv
+--
+We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Lieconv/Lieconvdataset.py) for the generation of the dataset and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Lieconv/Lieconv%20Dataset%20generation%20and%20Feature%20representation.ipynb).
