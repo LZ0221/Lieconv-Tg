@@ -49,6 +49,10 @@ Lieconv
 --
 We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Lieconv/Lieconvdataset.py) for the generation of the dataset (for the generation of Lieconv's dataset, it is necessary to additionally generate xyz files from the sdf files and generate the required data.pz file.) and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Lieconv/Lieconv%20Dataset%20generation%20and%20Feature%20representation.ipynb).
 
-Model training
+Model training and predict
 ==
-The code for training the models are placed in the [Model training directory] (). 
+The code for training and predict the models are placed in the [Model training and predict directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/Model%20training%20and%20Predict). 
+
+Models 
+==
+All optimal model results are placed in the [models directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/model).
