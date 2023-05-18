@@ -142,3 +142,10 @@ history = model.fit(X_train, train_Y,  validation_data=(X_valid, Valid_Y),
 
 #Predict
 
+print("Using loaded model to predict...")
+load_model = load_model("image-cnn.hdf5")
+np.set_printoptions(precision=4)
+predicted_tr = load_model.predict(train_X)
+predicted_va = load_model.predict(Valid_X)
+predicted_te = load_model.predict(Test_X)
+
