@@ -43,7 +43,7 @@ We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Datas
 
 ECC
 --
-We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/ECC/ECCdataset.py) for the generation of the dataset and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Eccconv/ECC%20Dataset%20generation%20and%20Feature%20representation.ipynb).
+We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/ECC/ECCdataset.py) for the generation of the dataset and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/ECC/ECC%20Dataset%20generation%20and%20Feature%20representation.ipynb).
 
 Lieconv
 --
