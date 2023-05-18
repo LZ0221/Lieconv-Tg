@@ -110,4 +110,42 @@ for num in idx_valid:
 Test_X = np.array(encodings_list)
 Test_Y =  np.array(targets_list)
 
+# Train model
+'''
+Saved_model: such as image-cnn-test.hdf5.
+'''
+img_width, img_height = 250, 37
+X_train = train_X.astype('float32') 
+X_valid = Valid_X.astype('float32') 
+reduce_lr_loss = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=10, verbose=1, epsilon=1e-4, mode='min',min_lr=0.00001)
+mcp_save = ModelCheckpoint('Saved_model', save_best_only=True, monitor='val_loss', mode='min')
+adam = Adam(lr=0.001)
+
+model = Sequential()
+model.add(Conv2D(16, (8, 8), activation='relu',
+                 input_shape=(img_width, img_height, 1)))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Conv2D(6, (4, 4), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Flatten())
+model.add(Dense(1536, activation='relu'))
+model.add(Dropout(0.3))
+model.add(Dense(512, activation='relu'))
+model.add(Dropout(0.3))
+model.add(Dense(32, activation='relu')) 
+model.add(Dense(1))
+model.compile(loss='mean_squared_error',optimizer=adam, metrics=['mean_absolute_error'])
+history = model.fit(X_train, train_Y,  validation_data=(X_valid, Valid_Y),
+          epochs=100, 
+          batch_size = 4 ,
+          callbacks=[reduce_lr_loss,mcp_save])
+
+#Predict
+
+print("Using loaded model to predict...")
+load_model = load_model("image-cnn.hdf5")
+np.set_printoptions(precision=4)
+predicted_tr = load_model.predict(train_X)
+predicted_va = load_model.predict(Valid_X)
+predicted_te = load_model.predict(Test_X)
 
