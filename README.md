@@ -25,7 +25,7 @@ Eccconv
 * [TensorFlow](https://www.tensorflow.org/?hl=zh-cn)
 * [Spektral](https://graphneural.network/)
 
-By using the [requirements/conda/lieconv-environment.yml](https://github.com/LZ0221/Lieconv-Tg/blob/main/requirements/conda/lieconv-environment.yml), requirements/pip/requirements.txt file, it will install all the required packages(Take Lieconv as an example).
+By using the [requirements/conda/lieconv-environment.yml](https://github.com/LZ0221/Lieconv-Tg/blob/main/requirements/conda/lieconv-environment.yml), requirements/pip/requirements.txt file, it will install all the required packages (take Lieconv as an example).
 ```
 git clone https://github.com/LZ0221/Lieconv-Tg.git
 cd Lieconv-Tg
