@@ -25,7 +25,7 @@ Eccconv
 * [TensorFlow](https://www.tensorflow.org/?hl=zh-cn)
 * [Spektral](https://graphneural.network/)
 
-By using the [requirements/conda/lieconv-environment.yml](https://github.com/LZ0221/Lieconv-Tg/blob/main/requirements/conda/lieconv-environment.yml), requirements/pip/requirements.txt file, it will install all the required packages(Take Lieconv as an example).
+By using the [requirements/conda/lieconv-environment.yml](https://github.com/LZ0221/Lieconv-Tg/blob/main/requirements/conda/lieconv-environment.yml), requirements/pip/requirements.txt file, it will install all the required packages (take Lieconv as an example).
 ```
 git clone https://github.com/LZ0221/Lieconv-Tg.git
 cd Lieconv-Tg
@@ -43,7 +43,7 @@ We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Datas
 
 ECC
 --
-We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Eccconv/Eccconv-dataset.py) for the generation of the dataset and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/Eccconv/ECC%20Dataset%20generation%20and%20Feature%20representation.ipynb).
+We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/ECC/ECCdataset.py) for the generation of the dataset and performed it in the [corresponding example](https://github.com/LZ0221/Lieconv-Tg/blob/main/Dataset%20generation%20and%20Feature%20representation/ECC/ECC%20Dataset%20generation%20and%20Feature%20representation.ipynb).
 
 Lieconv
 --
@@ -51,8 +51,21 @@ We have provided the [code](https://github.com/LZ0221/Lieconv-Tg/blob/main/Datas
 
 Model training and predict
 ==
-The code for training and predict the models are placed in the [Model training and predict directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/Model%20training%20and%20Predict). 
+The code for training and predict the models are placed in the [Model training and Predict directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/Model%20training%20and%20Predict). 
 
 Models 
 ==
 All optimal model results are placed in the [models directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/models).
+
+Wandb
+==
+The optimisation code for all three models using Weights & Biases is located in the [wandb directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/models).
+
+Polymer screening
+==
+The results of the PI1M screening are in the [polymer screening directory](https://github.com/LZ0221/Lieconv-Tg/tree/main/polymer%20screening).(Including PI1M_MF_1, PI1M_MF_2 and PI1M_MF_3)SVG files for the repeating cells in the [Tg>400℃](https://github.com/LZ0221/Lieconv-Tg/tree/main/polymer%20screening/PI1M_MF_3_Tg_greater%20than_400) and [Tg<-110℃](https://github.com/LZ0221/Lieconv-Tg/tree/main/polymer%20screening/PI1M_MF_3_Tg_less%20than_-110) sections of PI1M_MF_3 are also provided in the corresponding folders.
+
+Information of maintainers
+==
+* zmzhang@csu.edu.cn
+* 212311017@csu.edu.cn
