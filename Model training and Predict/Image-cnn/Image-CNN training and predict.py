@@ -6,6 +6,7 @@ Created on Tue Feb 14 14:43:07 2023
 """
 
 from keras.models import Sequential, load_model
+from keras.models import Sequential, load_model
 from keras.layers import Conv2D, MaxPooling2D, Dropout, Dense, Flatten
 from keras.optimizers import Adam
 import pandas as pd 
@@ -96,7 +97,7 @@ Valid_Y =  np.array(targets_list)
 
 encodings_list = []
 targets_list = []     
-for num in idx_valid:
+for num in idx_test:
     temp=[]
     smiles = smile_list[num]
     temp.append(smiles) 
